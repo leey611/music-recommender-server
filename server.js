@@ -32,16 +32,6 @@ app.use(express.json());
 
 
 
-// app.get('/', async (req, res) => {
-//   try {
-//     const dummy = await axios.get('https://yesno.wtf/api/');
-//     const data = await dummy.data;
-//     res.status(200).json(data);
-//   } catch (err) {
-//     console.log(err);
-//   }
-// });
-
 app.post('/artists', async (req, res) => {
   const lastFmBaseUrl = 'https://ws.audioscrobbler.com/2.0/';
   const text = req.body.text
